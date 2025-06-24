@@ -1,0 +1,126 @@
+body {
+  font-family: monospace, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  border: #000000 1px solid;
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 100;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: clamp(1rem, 20vw, 24rem);
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #65ff79;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+main{
+  max-width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.container{
+  width: 90%;
+  max-width: 90%;
+  margin: 20px auto;
+  border: #000000 1px solid;
+  display: inline-flex;
+  justify-items: content;
+}
+
+img {
+  max-width: 38%;
+  height: auto;
+  margin: 20px;
+  border-radius: 5%;
+  border: #000000 1px solid;
+  display: inline-flex;
+}
+
+.txt-container {
+    margin: 20px 40px;
+    display: inline;
+    vertical-align: top;
+    font-size: 15px;
+}
+
+pre{
+    display: inline-flex;
+    vertical-align: top;
+    font-size: 15px;
+    margin: 40px 20px;
+}
+
+h1{
+    color: #000000;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration-line: none;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    color: #000000;
+    border-top: #000000 1px solid;
+}
+
+.pdf{
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+}
+
+a:hover{
+    color: #65ff79;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    display: flex; /* Ensure it's flex, not inline-flex */
+  }
+  img {
+    max-width: 80%;
+    margin: 20px 0 10px 0;
+    display: block;
+  }
+  .txt-container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
