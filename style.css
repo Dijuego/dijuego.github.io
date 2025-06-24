@@ -22,7 +22,7 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: clamp(1rem, 20vw, 24rem);
+  gap: clamp(1rem, 7vw, 24rem);
 }
 
 nav ul li a {
