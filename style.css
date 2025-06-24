@@ -52,7 +52,7 @@ main{
   margin: 20px auto;
   border: #000000 1px solid;
   display: inline-flex;
-  justify-items: content;
+  justify-content: center;
 }
 
 img {
@@ -97,9 +97,9 @@ footer{
 }
 
 .pdf{
-  width: 100%;
+  width: 80%;
   height: 600px;
-  justify-content: center;
+  margin: 20px auto;
 }
 
 a:hover{
